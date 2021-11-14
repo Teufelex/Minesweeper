@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minesweeper</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="layout"></div>
+      <div class="game__wrapper">
+        <canvas id="field" oncontextmenu="event.preventDefault();"></canvas>
+        <div class="game__controller">
+          <div class="game__controller__massage"></div>
+          <div class="game__controller__buttons">
+            <button class="controller__buttons--res">Resatart Game</button>
+            <button class="controller__buttons--new">New Game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

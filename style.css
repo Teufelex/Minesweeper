@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+}
+
+.layout {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+}
+
+.game__wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game__controller {
+    margin-left: 5vw;
+}
+
+.game__controller__massage {
+    font-size: 2rem;
+    color: white;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.game__controller__buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 20vw;
+}
+
+.game__controller__buttons > button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border: none;
+    opacity: 0.9;
+} 
