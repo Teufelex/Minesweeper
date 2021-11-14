@@ -1,2 +1,2 @@
 # Minesweeper  
-https://github.com/Teufelex/Minesweeper
+https://teufelex.github.io/Minesweeper/
