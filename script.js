@@ -22,6 +22,7 @@ class Minesweeper {
 
   init() {
     this.preloadImages();
+    this.addListeners();
   }
 
   loadGame() {
@@ -29,7 +30,6 @@ class Minesweeper {
     this.setBombs();
     this.fillMatrix();
     this.drawField();
-    this.addListeners();
   }
 
   createFieldMatrix() {
@@ -143,7 +143,6 @@ class Minesweeper {
     }
 
     if (code === 2) {
-      console.log('click');
       if (this.clickedCells[y + "" + x]) return;
       this.flags[y + "" + x] = !this.flags[y + "" + x];
       this.drawField();
@@ -249,7 +248,6 @@ class Minesweeper {
   newPressed() {
     this.isNew = true;
     this.clearData();
-    this.removeListeners();
     this.loadGame();
   }
 
