@@ -143,6 +143,7 @@ class Minesweeper {
     }
 
     if (code === 2) {
+      console.log('click');
       if (this.clickedCells[y + "" + x]) return;
       this.flags[y + "" + x] = !this.flags[y + "" + x];
       this.drawField();
