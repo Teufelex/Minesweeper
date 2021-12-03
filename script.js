@@ -18,6 +18,7 @@ class Minesweeper {
     this.isNew = null;
     this.images = {};
     this.massage = box;
+    this.clickHandler = this.cellClicked.bind(this);
   }
 
   init() {
@@ -257,11 +258,11 @@ class Minesweeper {
   }
 
   addListeners() {
-    this.canvas.addEventListener("mouseup", this.cellClicked);
+    this.canvas.addEventListener("mouseup", this.clickHandler);
   }
 
   removeListeners() {
-    this.canvas.removeEventListener("mouseup", this.cellClicked);
+    this.canvas.removeEventListener("mouseup", this.clickHandler);
   }
 }
 
