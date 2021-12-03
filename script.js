@@ -257,11 +257,11 @@ class Minesweeper {
   }
 
   addListeners() {
-    this.canvas.addEventListener("mouseup", this.cellClicked.bind(this));
+    this.canvas.addEventListener("mouseup", this.cellClicked);
   }
 
   removeListeners() {
-    this.canvas.removeEventListener("mouseup", this.cellClicked.bind(this));
+    this.canvas.removeEventListener("mouseup", this.cellClicked);
   }
 }
 
